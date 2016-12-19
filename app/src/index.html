@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wechat H5 Boilerplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Add your keywords and description here for SEO. -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+    <!-- Uncomment this if you need apple touch icon. -->
+    <!--
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+    -->
+
+    <!-- Don't delete this. It's needed for development workflow. -->
+    <!-- inject:css -->
+    <!-- endinject -->
+</head>
+
+<body>
+<div class="loading-overlay">
+    <img src="images/loading.svg">
+</div>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slide-1">
+            <div class="item-beat animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.2s"></div>
+            <div class="item-howlong animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.3s">
+                <p class="item-text-howlong-1 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.2s">0</p>
+                <p class="item-text-howlong-2 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.4s">0</p>
+                <p class="item-text-howlong-3 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.6s">0</p>
+                <p class="item-text-howlong-4 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.8s">0</p>
+            </div>
+            <div class="item-line animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.5s">
+                <p class="item-text-beat">80%</p>
+            </div>
+            <p class="item-text animated" data-ani-name="zoomInRight" data-ani-duration="1s" data-ani-delay="0.3s" id="family"></p>
+        </div>  
+        <div class="swiper-slide slide-2 item-image">
+            <div class="animated" data-ani-name="bounceInLeft" data-ani-duration="1s" data-ani-delay="0.42s"  style="  width: auto;
+                height: 13rem;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: fixed;
+                top: 18rem;
+                left: 1rem;
+                right: 8rem;
+                margin: auto;
+                background-image: url('./images/这一位.jpg');">           
+            </div>
+            <div class="animated" data-ani-name="bounceInRight" data-ani-duration="1s" data-ani-delay="0.1s" style="width: auto;
+                height: 13rem;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: fixed;
+                top: 11rem;
+                left: 10rem;
+                right: 1rem;
+                margin: auto;
+                background-image: url('./images/大圣归来.jpg');">
+            </div>
+            <div class="animated" data-ani-name="bounceInLeft" data-ani-duration="1s" data-ani-delay="1.2s" style=" height: 12rem;
+                width: auto;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: fixed;          
+                bottom: 2rem;
+                left: 7rem;
+                right: 1rem;
+                margin: auto;
+                background-image: url('./images/我无法.jpg');">
+            </div>
+            <div class="animated" data-ani-name="bounceInUp" data-ani-duration="1s"       data-ani-delay="1.71s" style="width: auto;
+                height: 3rem;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: fixed;
+                bottom: 2rem;
+                left: 8rem;
+                right: 8rem;
+                margin: auto;
+                z-index: 2;
+                background-image: url('./images/光头.jpg');">
+            </div>
+                <div class="animated" data-ani-name="bounceInUp" data-ani-duration="1s" data-ani-delay="2.15s" style="width: auto;
+                height: 3rem;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: fixed;
+                bottom: 1rem;
+                left: 8rem;
+                right: 8rem;
+                margin: auto;
+                z-index: 1;
+                background-image: url('./images/原点.jpg');">
+            </div>
+        </div>
+        <div class="swiper-slide slide-dashen">
+             <div class="item-image1 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0s"></div>
+             <div class="item-image2 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.5s"></div>
+             <div class="item-image3 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="1s"></div>
+             <div class="item-image5 animated" data-ani-name="bounceInUp" data-ani-duration="1s" data-ani-delay="2s"></div> 
+             <div class="item-image4 animated" data-ani-name="bounceInUp" data-ani-duration="1s" data-ani-delay="1.5s"></div>
+            
+        </div>
+       
+        <div class="swiper-slide slide-4">
+        
+            <div class="item-image animated" data-ani-name="flipInX" data-ani-duration="1s" data-ani-delay="0s"></div>
+            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">我有邪王真眼</p>
+        </div>
+
+        <div class="swiper-slide slide-3">
+            <div class="item-image animated" data-ani-name="flipInX" data-ani-duration="1s" data-ani-delay="0s"></div>
+            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">I'm a javascript newbie!</p>
+        </div>
+    </div>
+</div>
+
+<!-- <button class="up-arrow">
+    <i class="icon-angle-double-up"></i>
+</button> -->
+
+<button class="btn-music">
+    <i class="icon-note"></i>
+</button>
+
+<audio loop>
+    <source src="audios/background.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Don't delete this. It's needed for development workflow. -->
+<!-- inject:js -->
+<!-- endinject -->
+<script type="text/javascript">
+
+function getParams(name){
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null){
+            return r[2];
+        }
+        return null;
+    }
+
+function showInfo(){
+
+    var days = decodeURIComponent(getParams("days")).split("");
+    // alert(days);
+    if(days.length <= 4){
+        for (var i = 1; i <= 4 ; i++) {
+                $(".item-text-howlong-"+i).html(days[i-1]);
+             }
+    }
+
+    //alert(name);
+    // this.$http.get("http://hr2.auxgroup.com/api/console/company/vue/query/"+name).then(function(response) {
+    //      document.getElementById("companyPlace").innerHTML=response.data.address;
+    //  },function(response){
+    //     console.log(response);
+    //  })
+
+    // $.get("http://hr2.auxgroup.com/api/console/company/vue/query/"+name,
+    //     function(data,status){
+    //         document.getElementById("companyPlace").innerHTML=data.address;
+    //         console.log(data);
+    //     });
+    // $.ajax({
+    //     url:"http://localhost:9999/party/yearEnd/"+name,
+    //     type:"GET",
+    //     success:function(data){
+    //         $("#family").html("您于"+data.joindate+"年加入奥克斯大家庭，这是在奥克斯的第"+data.workdays+"天，打败了"+data.beat+"%的人。");
+    //     },
+    //     error:function(data){
+    //         console.log(data);
+    //     }
+    // });
+};
+window.onload=showInfo();
+
+
+</script>
+</body>
+
+</html>
