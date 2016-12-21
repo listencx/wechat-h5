@@ -26,6 +26,11 @@
         right: 0;
         margin: auto;
         background-image: url('../images/one/howlong.png');
+        color: #fff;
+        font-size: 11vh;
+        font-stretch: ultra-condensed;
+        font-weight: bold;
+        font-family:DIY;
     }
     .item-line{
         width: 100%;
@@ -41,61 +46,32 @@
         background-image: url('../images/one/line.png');
     }
     .item-text-howlong-1 {
-        color: #fff;
-        font-size: 6vh;
-        font-stretch: ultra-condensed;
-        font-weight: 900;
-        transform: scale(1,2.5);
-        font-family:黑体;
-        top: 30%;
-        left: 19.5%;
+        top: 22%;
+        left: 18%;
         position: absolute;
-        text-align: center;
     }
     .item-text-howlong-2 {
-        color: #fff;
-        font-size: 6vh;
-        font-stretch: ultra-condensed;
-        font-weight: 900;
-        transform: scale(1,2.5);
-        font-family:黑体;
-        top: 30%;
-        left: 40.5%;
+        top: 22%;
+        left: 39.5%;
         position: absolute;
-        text-align: center;
     }
     .item-text-howlong-3 {
-        color: #fff;
-        font-size: 6vh;
-        font-stretch: ultra-condensed;
-        font-weight: 900;
-        transform: scale(1,2.5);
-        font-family:黑体;
-        top: 30%;
-        left: 56%;
+        top: 22%;
+        left: 55%;
         position: absolute;
-        text-align: center;
     }
     .item-text-howlong-4 {
-        color: #fff;
-        font-size: 6vh;
-        font-stretch: ultra-condensed;
-        font-weight: 900;
-        transform: scale(1,2.5);
-        font-family:黑体;
-        top: 30%;
-        left: 72%;
+        top: 22%;
+        left: 71%;
         position: absolute;
-        text-align: center;
     }
     .item-text-beat {
         color: #cf000d;
-        font-size: 2.8vh;
-        font-weight: 800;
-        transform: scale(1,2.3);
-        font-family:楷体;
-        top: 60%;
-        left: 43%;
+        font-size: 5.8vh;
+        font-weight: bold;       
+        font-family:DIY;
+        top: 55.3%;
+        left: 42%;
         position: absolute;
         text-align: center;
     }
