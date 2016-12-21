@@ -33,13 +33,13 @@
         <div class="swiper-slide slide-1">
             <div class="item-beat animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.2s"></div>
             <div class="item-howlong animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.3s">
-                <p class="item-text-howlong-1 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.2s">0</p>
-                <p class="item-text-howlong-2 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.4s">0</p>
-                <p class="item-text-howlong-3 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.6s">0</p>
-                <p class="item-text-howlong-4 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.8s">0</p>
+                <p class="item-text-howlong-1 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.7s"></p>
+                <p class="item-text-howlong-2 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.8s"></p>
+                <p class="item-text-howlong-3 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.9s"></p>
+                <p class="item-text-howlong-4 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="1.0s"></p>
             </div>
-            <div class="item-line animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.5s">
-                <p class="item-text-beat">80%</p>
+            <div class="item-line animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.6s">
+                <p class="item-text-beat"></p>
             </div>
             <p class="item-text animated" data-ani-name="zoomInRight" data-ani-duration="1s" data-ani-delay="0.3s" id="family"></p>
         </div>  
@@ -155,22 +155,25 @@ function getParams(name){
         return null;
     }
 
-function showInfo(){
-
-    var days = decodeURIComponent(getParams("days")).split("");
-    // alert(days);
-    if(days.length <= 4){
+$(function(){
+var name = decodeURIComponent(getParams("name"));
+    $.get("http://localhost:9999/party/life/employee/"+name).then(function(response) {
+        var days=response.workdays;
+        if(days.length <= 4){
         for (var i = 1; i <= 4 ; i++) {
                 $(".item-text-howlong-"+i).html(days[i-1]);
-             }
-    }
-
+            }
+        };
+        $(".item-text-beat").html(response.beat+"%");
+     },function(response){
+        console.log(response);
+     })
+    
+})
+    
+    // alert(days);
     //alert(name);
-    // this.$http.get("http://hr2.auxgroup.com/api/console/company/vue/query/"+name).then(function(response) {
-    //      document.getElementById("companyPlace").innerHTML=response.data.address;
-    //  },function(response){
-    //     console.log(response);
-    //  })
+
 
     // $.get("http://hr2.auxgroup.com/api/console/company/vue/query/"+name,
     //     function(data,status){
@@ -187,8 +190,8 @@ function showInfo(){
     //         console.log(data);
     //     }
     // });
-};
-window.onload=showInfo();
+//};
+//window.onload=showInfo();
 
 
 </script>
