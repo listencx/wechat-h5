@@ -1,23 +1,13 @@
 .slide-2 {
-    background-color: #5cc2f1;
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-size: cover!important;
-        background-repeat: no-repeat;
-        positon:relative;
-        top: 0rem;
-        left: 0;
-        right: 0;
-        margin: auto;
-        background-image: url('../images/背景.jpg');
+
+    background-image: url('../images/背景.jpg');
     .item-thisone {
         width: auto;
         height: 13rem;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        position: fixed;
+        position: absolute;
         top: 18rem;
         left: 1rem;
         right: 8rem;
@@ -30,7 +20,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        position: fixed;
+        position: absolute;
         top: 11rem;
         left: 10rem;
         right: 1rem;
@@ -43,7 +33,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        position: fixed;          
+        position: absolute;          
         bottom: 2rem;
         left: 7rem;
         right: 1rem;
@@ -56,12 +46,11 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        position: fixed;
+        position: absolute;
         bottom: 1rem;
         left: 8rem;
         right: 8rem;
         margin: auto;
-        z-index: 1;
         background-image: url('../images/原点.jpg');
     }
     .item-guangtou{
@@ -70,12 +59,11 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        position: fixed;
+        position: absolute;
         bottom: 2rem;
         left: 8rem;
         right: 8rem;
         margin: auto;
-        z-index: 2;
         background-image: url('../images/光头.jpg');
     }
     .item-text {
