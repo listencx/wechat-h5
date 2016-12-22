@@ -1,5 +1,4 @@
 .slide-1 {
-    background-color: #3d5b8b;
      background-image: url('../images/one/background.jpg');
     .item-beat {
         width: 100%;
@@ -27,7 +26,7 @@
         margin: auto;
         background-image: url('../images/one/howlong.png');
         color: #fff;
-        font-size: 11vh;
+        font-size: 4rem;
         font-stretch: ultra-condensed;
         font-weight: bold;
         font-family:DIY;
@@ -45,33 +44,33 @@
         margin: auto;
         background-image: url('../images/one/line.png');
     }
-    .item-text-howlong-1 {
-        top: 22%;
-        left: 18%;
+     .item-text-howlong-1 {
+        top: 34%;
+        left: 21.2%;
         position: absolute;
     }
     .item-text-howlong-2 {
-        top: 22%;
-        left: 39.5%;
+        top: 34%;
+        left: 40.6%;
         position: absolute;
     }
     .item-text-howlong-3 {
-        top: 22%;
-        left: 55%;
+        top: 34%;
+        left: 55.3%;
         position: absolute;
     }
     .item-text-howlong-4 {
-        top: 22%;
-        left: 71%;
+        top: 34%;
+        left: 69.2%;
         position: absolute;
     }
     .item-text-beat {
         color: #cf000d;
-        font-size: 5.8vh;
+        font-size: 2.4rem;
         font-weight: bold;       
         font-family:DIY;
-        top: 55.3%;
-        left: 42%;
+        top: 61%;
+        left: 42.5%;
         position: absolute;
         text-align: center;
     }

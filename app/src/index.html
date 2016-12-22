@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Wechat H5 Boilerplate</title>
+    <title>奥克斯人生</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- Add your keywords and description here for SEO. -->
     <meta name="keywords" content="">
@@ -19,8 +19,7 @@
     -->
 
     <!-- Don't delete this. It's needed for development workflow. -->
-    <!-- inject:css -->
-    <!-- endinject -->
+    <link rel="stylesheet" href="stylesheets/bundle.css">
 </head>
 
 <body>
@@ -30,46 +29,28 @@
 
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide slide-1">
-            <div class="item-beat animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.2s"></div>
-            <div class="item-howlong animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.3s">
-                <p class="item-text-howlong-1 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.7s">2</p>
-                <p class="item-text-howlong-2 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.8s">1</p>
-                <p class="item-text-howlong-3 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.9s">0</p>
-                <p class="item-text-howlong-4 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="1.0s">8</p>
+        <div class="swiper-slide slide-1">           
+            <div class="item-howlong animated" data-ani-name="bounceInDown" data-ani-duration="1.5s" data-ani-delay="0.8s">
+                <span class="item-text-howlong-1 animated" data-ani-name="flipInX" data-ani-duration="1.5s" data-ani-delay="1.2s">2</span>
+                <span class="item-text-howlong-2 animated" data-ani-name="flipInX" data-ani-duration="1.5s" data-ani-delay="1.4s">1</span>
+                <span class="item-text-howlong-3 animated" data-ani-name="flipInX" data-ani-duration="1.5s" data-ani-delay="1.6s">0</span>
+                <span class="item-text-howlong-4 animated" data-ani-name="flipInX" data-ani-duration="1.5s" data-ani-delay="1.8s">8</span>
             </div>
-            <div class="item-line animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.6s">
-                <p class="item-text-beat">80%</p>
+             <div class="item-beat animated" data-ani-name="bounceInDown" data-ani-duration="1.5s" data-ani-delay="1.8s">
+                <span class="item-text-beat animated" data-ani-name="fadeIn" data-ani-duration="1.5s" data-ani-delay="1.9s">80%</span>
             </div>
-            <p class="item-text animated" data-ani-name="zoomInRight" data-ani-duration="1s" data-ani-delay="0.3s" id="family"></p>
+            <div class="item-line animated" data-ani-name="bounceInDown" data-ani-duration="1.5s" data-ani-delay="2.1s"></div>
         </div>  
-        <div class="swiper-slide slide-2">
-            <div class="item-thisone animated" data-ani-name="bounceInLeft" data-ani-duration="1s" data-ani-delay="0.42s"></div>
-            <div class="item-thisone animated" data-ani-name="bounceInLeft" data-ani-duration="1s" data-ani-delay="0.42s"></div>
-            <div class="item-dashengguilai animated" data-ani-name="bounceInRight" data-ani-duration="1s" data-ani-delay="0.1s"></div>
-            <div class="item-wowufa animated" data-ani-name="bounceInLeft" data-ani-duration="1s" data-ani-delay="1.2s"></div>
-            <div class="item-yuandian animated" data-ani-name="bounceInUp" data-ani-duration="1s" data-ani-delay="2.15s"></div>
-            <div class="item-guangtou animated" data-ani-name="bounceInUp" data-ani-duration="1s" data-ani-delay="1.71s"></div>
-
-        </div>
-        <div class="swiper-slide slide-dashen">
-             <div class="item-image1 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0s"></div>
-             <div class="item-image2 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.5s"></div>
-             <div class="item-image3 animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="1s"></div>
-             <div class="item-image5 animated" data-ani-name="bounceInUp" data-ani-duration="1s" data-ani-delay="2s"></div> 
-             <div class="item-image4 animated" data-ani-name="bounceInUp" data-ani-duration="1s" data-ani-delay="1.5s"></div>
-            
+        <div class="swiper-slide slide-2 item-image">
+           
         </div>
        
         <div class="swiper-slide slide-4">
         
-            <div class="item-image animated" data-ani-name="flipInX" data-ani-duration="1s" data-ani-delay="0s"></div>
-            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">我有邪王真眼</p>
         </div>
 
         <div class="swiper-slide slide-3">
-            <div class="item-image animated" data-ani-name="flipInX" data-ani-duration="1s" data-ani-delay="0s"></div>
-            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">I'm a javascript newbie!</p>
+        
         </div>
     </div>
 </div>
@@ -87,8 +68,7 @@
 </audio>
 
 <!-- Don't delete this. It's needed for development workflow. -->
-<!-- inject:js -->
-<!-- endinject -->
+<script src="javascripts/bundle.js"></script>
 <script type="text/javascript">
 
 function getParams(name){
