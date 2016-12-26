@@ -7,4 +7,25 @@
 	.item-2{
 		background-image: url('../images/5/2.png');
 	}
+	.item-birthplace{
+		top: 34%;
+		left: 24%;
+		font-size: 140%;
+		position: fixed;
+	}
+	.item-villagers{
+		top: 38.5%;
+		left: 42%;
+		font-size: 180%;
+		position: fixed;
+	}
+
+	span {
+		width: 100%;
+        height: 100%;
+        color: red;
+	    font-stretch: ultra-condensed;
+	    font-weight: bold;
+	    font-family:DIY;
+	}
 }

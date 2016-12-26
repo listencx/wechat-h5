@@ -8,4 +8,28 @@
 	.item-2{
 		background-image: url('../images/2/2.png');
 	}
+	.item-year{
+		top: 28%;
+		left: 30%;
+        position: fixed;
+	}
+	.item-month{
+		top: 36%;
+		left: 19%;
+        position: fixed;
+	}
+	.item-day{
+		top: 36%;
+		left: 34%;
+        position: fixed;
+	}
+	span {
+		width: 100%;
+        height: 100%;
+        color: red;
+	    font-size: 200%;
+	    font-stretch: ultra-condensed;
+	    font-weight: bold;
+	    font-family:DIY;
+	}
 }

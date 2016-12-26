@@ -4,10 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <title>奥克斯人生</title>
-    <meta name=”viewport” content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Add your keywords and description here for SEO. -->
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+    <!-- Uncomment this if you need apple touch icon. -->
+    <!--
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+    -->
+
     <!-- Don't delete this. It's needed for development workflow. -->
     <link rel="stylesheet" href="stylesheets/bundle.css">
 </head>
@@ -20,27 +30,15 @@
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide slide-1">
-            <div class="item-howlong animated" data-ani-name="fadeInDown" data-ani-duration="1s" data-ani-delay="0.5s">
-                  <span class="offset1 ">2</span>
-                  <span class="offset2 ">4</span>
-                  <span class="offset3 ">8</span>
-                  <span class="offset4 ">8</span>
-            </div>
-             <div class="item-beat animated" data-ani-name="fadeIn" data-ani-duration="1.2s" data-ani-delay="1.2s">
-                <span class="item-text-beat">80%</span>
-            </div>
-            <div style="color:white;font-size:1em" id="showinfo"></div>
-<!--             <div class="item-line"></div> -->
+           <div class="item-1 item-image animated" data-ani-name="fadeInDown" data-ani-duration="1s" data-ani-delay="0.5s"></div>
         </div>
-
-
-
-
-  <!--       <div class="swiper-slide slide-2">
+        <div class="swiper-slide slide-2">
            <div class="item-1 item-image"></div>
            <div class="item-2 item-image"></div>
+           <span class="item-year animated" data-ani-name="slideInDown" data-ani-duration="1s" data-ani-delay="0.5s">1949</span>
+           <span class="item-month animated" data-ani-name="slideInDown" data-ani-duration="1s" data-ani-delay="0.5s">10</span>
+           <span class="item-day animated" data-ani-name="slideInDown" data-ani-duration="1s" data-ani-delay="0.5s">01</span>
         </div>
-
         <div class="swiper-slide slide-4">
             <div class="item-1 item-image" id="number-four">
                 <div class="item-span animated" data-ani-name="fadeInDown" data-ani-duration="1s" data-ani-delay="0.5s">
@@ -50,7 +48,7 @@
                     <span class="item-text-howlong-4">8</span>
                 </div>
             </div>
-            <div class="item-1-5 item-image" id="number-five">
+            <div class="item-1-5 item-image" id="number-five" style="display: none;">
                 <div class="item-span animated" data-ani-name="fadeInDown" data-ani-duration="1s" data-ani-delay="0.5s">
                     <span class="item-text-howlong-5-1">2</span>
                     <span class="item-text-howlong-5-2">1</span>
@@ -59,22 +57,26 @@
                     <span class="item-text-howlong-5-5">2</span>
                 </div>
             </div>
-            <div class="item-2 item-image"></div>
+            <div class="item-2 item-image animated" data-ani-name="fadeInDown" data-ani-duration="1s" data-ani-delay="1.2s">
+                <span class="item-text-beat">80%</span>
+            </div>
         </div>
         <div class="swiper-slide slide-5">
             <div class="item-1 item-image"></div>
             <div class="item-2 item-image"></div>
+            <span class="item-birthplace animated" data-ani-name="shake" data-ani-duration="1.5s" data-ani-delay="0.1">浙江省宁波市</span>
+            <span class="item-villagers animated" data-ani-name="bounceIn" data-ani-duration="1s" data-ani-delay="1.5s">1234</span>
         </div>
-        <!-- <div class="swiper-slide slide-6">
+        <div class="swiper-slide slide-6">
             <div class="item-1 item-image"></div>
             <div class="item-2 item-image"></div>
             <div class="item-3 item-image"></div>
         </div>
-        <div class="swiper-slide slide-7">
+ <!--        <div class="swiper-slide slide-7">
             <div class="item-1 item-image"></div>
             <div class="item-2 item-image"></div>
             <div class="item-3 item-image"></div>
-        </div> --> -->
+        </div>
         <div class="swiper-slide slide-8">
             <div class="item-1 item-image"></div>
             <div class="item-2 item-image"></div>
@@ -100,10 +102,7 @@
             <div class="item-2 item-image"></div>
             <div class="item-3 item-image"></div>
             <div class="item-4 item-image"></div>
-        </div>
-
-  
-
+        </div> -->
     </div>
 </div>
 
@@ -115,20 +114,68 @@
     <i class="icon-note"></i>
 </button>
 
-<!--
 <audio loop autoplay="autoplay">
     <source src="audios/background.mp3" type="audio/mpeg">
 </audio>
--->
-<!-- Don't delete this. It's needed for development workflow. -->
-<script src="javascripts/bundle.js"></script>
-<script>
-  $(document).ready(function () {
-    var vh = $('.swiper-slide').width() * 1.775;
-    $('.swiper-slide').css('height',vh);
-});
 
+<script src="javascripts/bundle.js"></script>
+
+<script type="text/javascript">
+
+
+$(function(){
+  // var vh = $('.swiper-slide').width() * 1.775;
+  //   $('.swiper-slide').css('height',vh);
+var name = "wuwenli";//decodeURIComponent(getParams("name"));
+
+if(name != "null"){
+    $(".item-howlong").css("display","none");
+    $.get("http://localhost:9999/party/life/employee/"+name).then(function(response) {
+        var startDate=response.startDate;
+        var workdays=response.workdays;
+        var birthplace=response.birthplace;
+        var beat=response.beat;
+        var villagers=response.villagers;
+
+        var arr=startDate.split("-");
+        var year=arr[0];
+        var month=arr[1];
+        var day=arr[2]; 
+        $(".item-year").html(year);
+        $(".item-month").html(month);
+        $(".item-day").html(day);
+        $(".item-birthplace").html(birthplace);
+        $(".item-villagers").html(villagers);
+
+        if(workdays.length <= 4){        
+        for (var i = 1; i <= 4 ; i++) {
+                $(".item-text-howlong-"+i).html(workdays[i-1]);
+            }
+        }
+        else{
+            $("#number-four").css("display","none");
+            $("#number-five").css("display","inline");
+            for (var i = 1; i <= 5 ; i++) {
+                $(".item-text-howlong-5-"+i).html(workdays[i-1]);
+            }
+        }
+        $(".item-text-beat").html(beat+"%");
+     },function(response){
+        console.log(response);
+     })
+    }
+})
+
+function getParams(name){
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null){
+            return r[2];
+        }
+        return null;
+    }
 </script>
+
 </body>
 
 </html>

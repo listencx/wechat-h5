@@ -20,49 +20,61 @@
 	    font-weight: bold;
 	    font-family:DIY;
 	}
+	.item-span span{
+	    top: 32%;
+	     color: #fff;
+	    font-stretch: ultra-condensed;
+	    font-weight: bold;
+	    font-family:DIY;
+	}
 	.item-text-howlong-1 {
-        top: 32%;
         left: 27.5%;
-        position: absolute;
+        position: fixed;
     }
     .item-text-howlong-2 {
-        top: 32%;
         left: 40.4%;
-        position: absolute;
+        position: fixed;
     }
     .item-text-howlong-3 {
-        top: 32%;
         left: 53.4%;
-        position: absolute;
+        position: fixed;
     }
     .item-text-howlong-4 {
-        top: 32%;
         left: 67%;
-        position: absolute;
+        position: fixed;
     }
     .item-text-howlong-5-1 {
-        top: 32%;
         left: 20%;
-        position: absolute;
+        position: fixed;
     }
     .item-text-howlong-5-2 {
-        top: 32%;
+
         left: 33%;
-        position: absolute;
+        position: fixed;
     }
     .item-text-howlong-5-3 {
         top: 32%;
         left: 46%;
-        position: absolute;
+        position: fixed;
     }
     .item-text-howlong-5-4 {
         top: 32%;
         left: 59%;
-        position: absolute;
+        position: fixed;
     }
     .item-text-howlong-5-5 {
         top: 32%;
         left: 72%;
-        position: absolute;
+        position: fixed;
+    }
+    .item-text-beat {
+        color: #cf000d;
+        font-size: 2.4rem;
+        font-weight: bold;
+        font-family:DIY;
+        top: 62%;
+        left: 42.5%;
+        position: fixed;
+        text-align: center;
     }
 }
