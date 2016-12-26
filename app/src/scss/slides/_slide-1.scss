@@ -1,74 +1,73 @@
 .slide-1 {
-    color: #fff;
-    font-size: 450%;
-    font-stretch: ultra-condensed;
-    font-weight: bold;
-    font-family:DIY;
-     background-image: url('../images/common/background.jpg');
+     background-image: url('../images/one/background.jpg');
+
     .item-beat {
         width: 100%;
         height: 100%;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        position: relative;
-        top: 0rem;
-        left: 0remem;
-        right: 0;
-        margin: auto;
+        position:fixed;
+        top:0;
+        left:0;
         background-image: url('../images/one/beat.png');
     }
+
     .item-howlong{
         width: 100%;
         height: 100%;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        position: absolute;
-        top: -2rem;
-        left: 0rem;
-        right: 0;
-        margin: auto;
+        position:fixed;
+        top:0;
+        left:0;
         background-image: url('../images/one/howlong.png');
+    }
 
-    }
     .item-line{
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0rem;
-        left: 0rem;
-        right: 0;
-        margin: auto;
-        background-image: url('../images/one/line.png');
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position:fixed;
+      top:0;
+      left:0;
+      background-image: url('../images/one/line.png');
     }
-     .item-text-howlong-1 {
-        top: 34%;
-        left: 21.2%;
-        position: absolute;
+
+    .item-howlong span{
+      color: #fff;
+      font-family:DIY;
+      font-size: 100%;
+      line-height:100%;
+      text-align:center;
+      position:fixed;
+      top:32.9%;
+      width:12.7%;
+      height:11%;
+      background-size:40.4% 71.3%;
     }
-    .item-text-howlong-2 {
-        top: 34%;
-        left: 40.6%;
-        position: absolute;
+
+    .offset1{
+      left:21.7%;
     }
-    .item-text-howlong-3 {
-        top: 34%;
-        left: 55.3%;
-        position: absolute;
+
+    .offset2{
+      left: 36.4%;
     }
-    .item-text-howlong-4 {
-        top: 34%;
-        left: 69.2%;
-        position: absolute;
+    .offset3{
+      left: 51.25%;
     }
+    .offset4{
+      left: 65.92%;
+    }
+
     .item-text-beat {
         color: #cf000d;
         font-size: 2.4rem;
-        font-weight: bold;       
+        font-weight: bold;
         font-family:DIY;
         top: 61%;
         left: 42.5%;
