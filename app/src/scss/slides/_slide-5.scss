@@ -1,23 +1,27 @@
 .slide-5 {
 
     background-image: url('../images/common/background.jpg');
-	.item-1{		
+	.item-1{
+		background-size: cover;		
 		background-image: url('../images/5/1.png');
 	}
 	.item-2{
+		background-size: cover;
 		background-image: url('../images/5/2.png');
 	}
 	.item-birthplace{
-		top: 34%;
+		top: 32.8%;
 		left: 24%;
-		font-size: 140%;
+		font-size: 130%;
 		position: fixed;
+		font-family:黑体;
 	}
 	.item-villagers{
-		top: 38.5%;
+		top: 37.5%;
 		left: 42%;
-		font-size: 180%;
+		font-size: 170%;
 		position: fixed;
+		font-family:DIY;
 	}
 
 	span {
@@ -26,6 +30,6 @@
         color: red;
 	    font-stretch: ultra-condensed;
 	    font-weight: bold;
-	    font-family:DIY;
+
 	}
 }

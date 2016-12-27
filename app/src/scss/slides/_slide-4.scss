@@ -1,19 +1,21 @@
 .slide-4 {
-
     background-image: url('../images/common/background.jpg');
-	.item-1{		
+	.item-1{	
+        background-size: cover;	
 		background-image: url('../images/4/1.png');
 	}
-	.item-1-5{		
+	.item-1-5{	
+        background-size: cover;
 		background-image: url('../images/4/1-5.png');
 	}
 
 	.item-2{
+        background-size: cover; 
 		background-image: url('../images/4/2.png');
 	}
 	.item-span {
 		width: 100%;
-        height: 100%;
+        height: auto;
         color: #fff;
 	    font-size: 450%;
 	    font-stretch: ultra-condensed;
@@ -21,50 +23,46 @@
 	    font-family:DIY;
 	}
 	.item-span span{
-	    top: 32%;
-	     color: #fff;
+	    top: 31.4%;
+	    color: #fff;
 	    font-stretch: ultra-condensed;
 	    font-weight: bold;
 	    font-family:DIY;
 	}
 	.item-text-howlong-1 {
-        left: 27.5%;
+        left: 24.4%;
         position: fixed;
     }
     .item-text-howlong-2 {
-        left: 40.4%;
+        left: 39.0%;
         position: fixed;
     }
     .item-text-howlong-3 {
-        left: 53.4%;
+        left: 53.6%;
         position: fixed;
     }
     .item-text-howlong-4 {
-        left: 67%;
+        left: 68.3%;
         position: fixed;
     }
     .item-text-howlong-5-1 {
-        left: 20%;
+        left: 16.2%;
         position: fixed;
     }
     .item-text-howlong-5-2 {
-
-        left: 33%;
+        left: 31.1%;
         position: fixed;
     }
     .item-text-howlong-5-3 {
-        top: 32%;
-        left: 46%;
+        left: 45.8%;
         position: fixed;
     }
     .item-text-howlong-5-4 {
-        top: 32%;
-        left: 59%;
+        left: 60.6%;
         position: fixed;
     }
     .item-text-howlong-5-5 {
-        top: 32%;
-        left: 72%;
+        left: 75.4%;
         position: fixed;
     }
     .item-text-beat {
@@ -72,8 +70,8 @@
         font-size: 2.4rem;
         font-weight: bold;
         font-family:DIY;
-        top: 62%;
-        left: 42.5%;
+        top: 64.1%;
+        left: 41.7%;
         position: fixed;
         text-align: center;
     }
