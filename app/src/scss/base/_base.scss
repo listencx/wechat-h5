@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+html {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: #000;
+    font-size: 100%;
+} 
+
+@media only screen and (min-width: 310px) and (max-width: 360px) {
+    html {
+            font-size: 15.8px;
+    }
+}
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+    html {
+            font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 400px) {
+    html {
+            font-size: 17.5px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+    html {
+            font-size: 18.9px;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    html {
+            font-size: 19.5px;
+    }
+}
+
+@font-face {
+    font-family: DIY;
+    src: url('../fonts/DIN+Condensed+Bold.ttf');
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.item-image{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
