@@ -54,6 +54,18 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    position: absolute;
+    position: fixed;
+}
+
+.line{
+    top:79.5%;
+    width: 100%;
+    height: 25%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index:999;
+    background-image: url('../images/common/line.png');
 }
 
