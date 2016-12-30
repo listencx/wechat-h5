@@ -1,12 +1,26 @@
 .slide-6 {
 
-	.item-1{		
+	.item-1{	
+		background-size: cover;		
 		background-image: url('../images/6/1.png');
 	}
 	.item-2{
-		background-image: url('../images/6/2.png');
+		top: 37.0%;
+		left: 56.6%;
+		position: fixed;	
 	}
 	.item-3{		
-		background-image: url('../images/6/3.png');
+		top: 64.5%;
+		left: 51.8%;
+		position: fixed;
+	}
+	span{
+		width: 100%;
+        height: auto;
+        color: #cf000d;
+	    font-size: 220%;
+	    font-stretch: ultra-condensed;
+	    font-weight: bold;
+	    font-family:DIY;
 	}
 }

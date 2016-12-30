@@ -89,7 +89,7 @@
             mousewheelControl: true,
             effect: 'coverflow',    // slide, fade, coverflow or flip
             speed: 400,
-            direction: 'vertical',autoHeight: true, 
+            direction: 'vertical', 
             fade: {
                 crossFade: false
             },

@@ -4,12 +4,27 @@
 		background-image: url('../images/8/1.png');
 	}
 	.item-2{
-		background-image: url('../images/8/2.png');
+		top: 36.9%;
+		left: 55.6%;
+		position: fixed;	
 	}
 	.item-3{		
-		background-image: url('../images/8/3.png');
+		top: 57.5%;
+		left: 51.6%;
+		position: fixed;
 	}
 	.item-4{
-		background-image: url('../images/8/4.png');
+		top: 73.1%;
+		left: 57.3%;
+		position: fixed;
+	}
+	span{
+		width: 100%;
+        height: auto;
+        color: #cf000d;
+	    font-size: 230%;
+	    font-stretch: ultra-condensed;
+	    font-weight: bold;
+	    font-family:DIY;
 	}
 }

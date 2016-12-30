@@ -1,12 +1,25 @@
 .slide-7 {
 
-	.item-1{		
+	.item-1{	
 		background-image: url('../images/7/1.png');
 	}
 	.item-2{
-		background-image: url('../images/7/2.png');
+		top: 34.1%;
+		left: 16.5%;
+		position: fixed;	
 	}
 	.item-3{		
-		background-image: url('../images/7/3.png');
+		top: 66.7%;
+		left: 63.7%;
+		position: fixed;
+	}
+	span{
+		width: 100%;
+        height: auto;
+        color: #cf000d;
+	    font-size: 210%;
+	    font-stretch: ultra-condensed;
+	    font-weight: bold;
+	    font-family:DIY;
 	}
 }
