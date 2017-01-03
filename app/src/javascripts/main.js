@@ -7,7 +7,7 @@
     //alert(name);
     if(name != "null"){
 
-        $.get("http://nh2016.auxgroup.com/party/life/employee/"+name).then(function(response) {
+        $.get("http://localhost:9999/party/life/employee/"+name).then(function(response) {
             var userId=response.userId;
             var startDate=response.startDate;
             var workdays=response.workdays;
