@@ -1,26 +1,27 @@
 .slide-2 {
 
 	.item-1{
-		background-size: cover;
 		background-image: url('../images/2/1.png');
 	}
 	.item-2{
-		background-size: cover;
 		background-image: url('../images/2/2.png');
 	}
 	.item-year{
+		width:15%;
 		top: 26.9%;
-		left: 28.8%;
+		left: 27.6%;
         position: fixed;
 	}
 	.item-month{
+		width:8%;
 		top: 34.8%;
-		left: 17.1%;
+		left: 16.3%;
         position: fixed;
 	}
 	.item-day{
+		width:8%;
 		top: 34.8%;
-		left: 32.4%;
+		left: 31.0%;
         position: fixed;
 	}
 	span {
@@ -31,5 +32,6 @@
 	    font-stretch: ultra-condensed;
 	    font-weight: bold;
 	    font-family:DIY;
+	    text-align:center;
 	}
 }

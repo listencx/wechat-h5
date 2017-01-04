@@ -1,18 +1,28 @@
 .slide-6 {
 
 	.item-1{	
-		background-size: cover;		
 		background-image: url('../images/6/1.png');
 	}
-	.item-2{
-		top: 37.0%;
-		left: 56.6%;
-		position: fixed;	
+	.item-1-1{	
+		display: none; 
+		background-image: url('../images/6/1-1.png');
 	}
-	.item-3{		
+	.item-1-2{	
+		display: none; 
+		background-image: url('../images/6/1-2.png');
+	}
+	.item-2{
+		width:12%;
+		top: 37.0%;
+		left: 55.3%;
+		position: absolute;
+	}
+	.item-3{	
+		width:12%;	
 		top: 64.5%;
 		left: 51.8%;
-		position: fixed;
+		right:100%;
+		position: absolute;
 	}
 	span{
 		width: 100%;
@@ -22,5 +32,6 @@
 	    font-stretch: ultra-condensed;
 	    font-weight: bold;
 	    font-family:DIY;
+	    text-align:center;
 	}
 }

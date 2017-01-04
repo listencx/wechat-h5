@@ -1,23 +1,25 @@
 .slide-5 {
 
 	.item-1{
-		background-size: cover;		
 		background-image: url('../images/5/1.png');
 	}
 	.item-2{
-		background-size: cover;
 		background-image: url('../images/5/2.png');
 	}
 	.item-birthplace{
+		width:100%;
+		text-align:center;
 		top: 32.8%;
-		left: 24%;
+		left: 0%;
 		font-size: 130%;
 		position: fixed;
 		font-family:黑体;
 	}
 	.item-villagers{
+		width:15%;
+		text-align:center;
 		top: 37.5%;
-		left: 42%;
+		left: 40%;
 		font-size: 170%;
 		position: fixed;
 		font-family:DIY;

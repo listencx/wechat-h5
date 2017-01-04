@@ -3,14 +3,37 @@
 	.item-1{	
 		background-image: url('../images/7/1.png');
 	}
+	.item-2-1{
+		display: none;
+		background-image: url('../images/7/2-1.png');
+	}
+	.item-2-2{
+		display: none;
+		background-image: url('../images/7/2-2.png');
+	}
+	.item-2-3{
+		display: none;
+		background-image: url('../images/7/2-3.png');
+	}
+	.item-2-4{
+		display: none;
+		background-image: url('../images/7/2-4.png');
+	}
+	.item-2-5{
+		display: none;
+		background-image: url('../images/7/2-5.png');
+	}
+	
 	.item-2{
+		width:12%;
 		top: 34.1%;
-		left: 16.5%;
+		left: 12.0%;
 		position: fixed;	
 	}
-	.item-3{		
-		top: 66.7%;
-		left: 63.7%;
+	.item-3{
+		width:12%;		
+		top: 66.4%;
+		left: 59.5%;
 		position: fixed;
 	}
 	span{
@@ -21,5 +44,6 @@
 	    font-stretch: ultra-condensed;
 	    font-weight: bold;
 	    font-family:DIY;
+	    text-align:right;
 	}
 }
