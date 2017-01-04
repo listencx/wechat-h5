@@ -4,23 +4,34 @@
     $(function(){
 
     var name = decodeURIComponent(getParams("u"));
-    //alert(name);
     if(name != "null"){
 
-        $.get("http://localhost:9999/party/life/employee/"+name).then(function(response) {
+        $.get("http://localhost:8888/party/life/employee/"+name).then(function(response) {
+            var sex=response.sex;
             var userId=response.userId;
             var startDate=response.startDate;
             var workdays=response.workdays;
             var birthplace=response.birthplace;
             var beat=response.beat;
             var villagers=response.villagers;
-            document.title=userId+'的奥克斯人生';
-            if(beat==100){
-                $(".item-text-beat").css("font-size","2.0rem");
-                $(".item-text-beat").css("top","64.8%");
-                $(".item-text-beat").css("left","40.2%");
+            var businessDay=response.businessDay;
+            var businessFood=response.businessFood;
+            var hours=response.hours;
+            var credit=response.credit;
+
+            document.title=userId+"的奥克斯人生";
+
+            if(sex=="男"){
+                $(".slide-1").children("div.item-2").css("display","block");
+                $(".slide-6").children("div.item-1-1").css("display","block");
+                $(".slide-11").children("div.item-2-1").css("display","block");
             }
-            if(beat.length<2)beat="&nbsp"+beat;
+            else{
+                $(".slide-1").children("div.item-3").css("display","block");
+                $(".slide-6").children("div.item-1-2").css("display","block");
+                $(".slide-11").children("div.item-2-2").css("display","block");
+            }
+
             var arr=startDate.split("-");
             var year=arr[0];
             var month=arr[1];
@@ -30,20 +41,57 @@
             $(".item-day").html(day);
             $(".item-birthplace").html(birthplace);
             $(".item-villagers").html(villagers);
+            if(birthplace.length>16){
+                $(".item-birthplace").css("font-size","98%");
+            }
+            
+            if(beat<=100&&beat>75){
+                $(".slide-4").children("div.item-2-75").css("display","block");
+            }
+            else if(beat<=75&&beat>50){
+                $(".slide-4").children("div.item-2-50").css("display","block");
+            }
+            else if(beat<=50&&beat>25){
+                $(".slide-4").children("div.item-2-25").css("display","block");
+            }
+            else if(beat<=25&&beat>=0){
+                $(".slide-4").children("div.item-2-0").css("display","block");
+            }
 
-            if(workdays.length <= 4){        
+            if(workdays.length <= 4){  
+                $("#number-four").css("display","block");      
             for (var i = 1; i <= 4 ; i++) {
                     $(".item-text-howlong-"+i).html(workdays[i-1]);
                 }
             }
-            else{
-                $("#number-four").css("display","none");
-                $("#number-five").css("display","inline");
+            else{                
+                $("#number-five").css("display","block");
                 for (var i = 1; i <= 5 ; i++) {
                     $(".item-text-howlong-5-"+i).html(workdays[i-1]);
                 }
             }
-            $(".item-text-beat").html(beat+"%");
+            $(".item-text-beat").html(beat+"%");            
+            
+            $(".slide-6").children("span.item-2").html(businessDay);
+            $(".slide-6").children("span.item-3").html(businessFood);
+            $(".slide-7").children("span.item-2").html(hours);
+            $(".slide-7").children("span.item-3").html(credit); 
+
+            if(hours<=180&&hours>144){
+                $(".slide-7").children("div.item-2-5").css("display","block");
+            }
+            else if(hours<=144&&hours>108){
+                $(".slide-7").children("div.item-2-4").css("display","block");
+            }
+            else if(hours<=108&&hours>72){
+                $(".slide-7").children("div.item-2-3").css("display","block");
+            }
+            else if(hours<=72&&hours>36){
+                $(".slide-7").children("div.item-2-2").css("display","block");
+            }
+            else if(hours<=36&&hours>=0){
+                $(".slide-7").children("div.item-2-1").css("display","block");
+            }
          },function(response){
             console.log(response);
          })
@@ -58,9 +106,9 @@
             }
             return null;
         }
+
     // load dependencies
     var animationControl = require('./animation-control.js');
-
 
     $(document).ready(function () {
         var bgMusic = $('audio').get(0);
@@ -85,7 +133,7 @@
         })
 
         // init Swiper
-        var mySwiper =new Swiper('.swiper-container', {
+        var mySwiper = new Swiper('.swiper-container', {
             mousewheelControl: true,
             effect: 'coverflow',    // slide, fade, coverflow or flip
             speed: 400,
@@ -108,13 +156,7 @@
                 animationControl.initAnimationItems();  // get items ready for animations
                 animationControl.playAnimation(swiper); // play animations of the first slide
             },
-            // onTransitionStart: function (swiper) {     // on the last slide, hide .btn-swipe
-            //     if (swiper.activeIndex === swiper.slides.length - 1) {
-            //         $upArrow.hide();
-            //     } else {
-            //         $upArrow.show();
-            //     }
-            // },
+
             onTransitionEnd: function (swiper) {       // play animations of the current slide
                 animationControl.playAnimation(swiper);
             },
