@@ -15,18 +15,22 @@
 <div class="loading-overlay">
     <img src="images/loading.svg">
 </div>
+<div style="display: none">
+    <img src="images/favicon.png">
+</div>
 
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide slide-1">
-           <div class="item-1 item-image"></div>
+            <p id="1111" style="color: white"></p>
+           <div class="item-1 item-image animated" data-ani-name="flash"></div>
            <div class="item-2 item-image"></div>
            <div class="item-3 item-image"></div>
         </div>
         <div class="swiper-slide slide-2">        
-           <div class="item-image line animated" data-ani-name="fadeIn" data-ani-delay="1s"></div>
+            <div class="item-image line"></div>
            <div class="item-1 item-image"></div>
-           <div class="item-2 item-image"></div>
+           <div class="item-2 item-image animated" data-ani-name="pulse"></div>
            <div class="animated" data-ani-name="fadeIn" data-ani-delay="0.5s">
                <span class="item-year"></span>
                <span class="item-month"></span>
@@ -34,9 +38,10 @@
            </div>
         </div>
         <div class="swiper-slide slide-4">
-           <div class="item-image line animated" data-ani-name="fadeIn" data-ani-delay="1s"></div>
-            <div id="number-four" style="display: none;">
-                <div class="item-1 item-image"></div>
+            <div class="item-image line"></div>
+            <div class="item-1 item-image"></div>
+            <div class="item-1-5 item-image"></div>
+            <div id="number-four" style="display: none;">                
                 <div class="item-span animated" data-ani-name="fadeIn">
                     <span class="item-text-howlong-1"></span>
                     <span class="item-text-howlong-2"></span>
@@ -45,7 +50,6 @@
                 </div>
             </div>
             <div id="number-five" style="display: none;">
-                <div class="item-1-5 item-image"></div>
                 <div class="item-span animated" data-ani-name="fadeIn">
                     <span class="item-text-howlong-5-1"></span>
                     <span class="item-text-howlong-5-2"></span>
@@ -54,22 +58,22 @@
                     <span class="item-text-howlong-5-5"></span>
                 </div>
             </div>
-            <div class="item-2-0 item-image"></div>
-            <div class="item-2-25 item-image"></div>
-            <div class="item-2-50 item-image"></div>
-            <div class="item-2-75 item-image"></div>
-            <div class="item-3 item-image"></div>
+            <div class="item-2-0 item-image animated" data-ani-name="zoomIn"></div>
+            <div class="item-2-25 item-image animated" data-ani-name="zoomIn"></div>
+            <div class="item-2-50 item-image animated" data-ani-name="zoomIn"></div>
+            <div class="item-2-75 item-image animated" data-ani-name="zoomIn"></div>
+            <div class="item-3 item-image animated" data-ani-name="zoomIn"></div>
             <span class="item-text-beat animated" data-ani-name="fadeIn" data-ani-delay="0.5s"></span>
         </div>
         <div class="swiper-slide slide-5">
-           <div class="item-image line animated" data-ani-name="fadeIn" data-ani-delay="1s"></div>
-            <div class="item-1 item-image"></div>
+            <div class="item-image line"></div>
+            <div class="item-1 item-image animated" data-ani-name="tada"></div>
             <div class="item-2 item-image"></div>
             <span class="item-birthplace animated" data-ani-name="shake"></span>
             <span class="item-villagers animated" data-ani-name="bounceIn" data-ani-delay="0.5s"></span>
         </div>
         <div class="swiper-slide slide-6">
-           <div class="item-image line animated" data-ani-name="fadeIn" data-ani-delay="1s"></div>
+            <div class="item-image line"></div>
             <div class="item-1 item-image"></div>
             <div class="item-1-1 item-image"></div>
             <div class="item-1-2 item-image"></div>
@@ -77,8 +81,10 @@
             <span class="item-3 animated" data-ani-name="fadeIn" data-ani-delay="0.5s"></span>
         </div>
         <div class="swiper-slide slide-7">
-            <div class="item-image line animated" data-ani-name="fadeIn" data-ani-delay="1s"></div>
-            <div class="item-1 item-image"></div>           
+            <div class="item-image line"></div>
+            <div class="item-1 item-image"></div> 
+            <div class="item-4 item-image"></div>  
+            <div class="item-5 item-image animated" data-ani-name="fadeIn"></div>         
             <span class="item-2 animated" data-ani-name="fadeIn"></span>
             <span class="item-3 animated" data-ani-name="fadeIn" data-ani-delay="0.5s"></span>
             <div class="item-2-1 item-image"></div>
@@ -88,22 +94,26 @@
             <div class="item-2-5 item-image"></div>
         </div>
         <div class="swiper-slide slide-8">
-            <div class="item-image line animated" data-ani-name="fadeIn" data-ani-delay="1s"></div>
-            <div class="animated" data-ani-name="fadeIn" data-ani-delay="0.5s">
-                <div class="item-1 item-image"></div>
-            </div>
+            <div class="item-image line"></div>
+            <div class="item-1 item-image"></div>
+            <div class="item-2 item-image"></div>
+            <div class="item-3 item-image animated" data-ani-name="fadeIn" ></div>
+            <div class="item-4 item-image animated" data-ani-name="fadeIn" data-ani-delay="0.5s" ></div>
         </div>
         <div class="swiper-slide slide-9">
-            <div class="item-image line animated" data-ani-name="fadeIn" data-ani-delay="1s"></div>
-            <div class="animated" data-ani-name="fadeIn" data-ani-delay="0.5s">
-                <div class="item-1 item-image"></div>
-            </div>
+            <div class="item-image line"></div>
+            <div class="item-1 item-image"></div>
+            <div class="item-2 item-image"></div>
+            <div class="item-3 item-image animated" data-ani-name="fadeIn" ></div>
+            <div class="item-4 item-image animated" data-ani-name="fadeIn" data-ani-delay="0.5s" ></div>
         </div>
         <div class="swiper-slide slide-10">  
-            <div class="item-image line animated" data-ani-name="fadeIn" data-ani-delay="1s"></div>
-            <div class="animated" data-ani-name="fadeIn" data-ani-delay="0.5s">
-                <div class="item-4 item-image"></div>
-            </div>
+            <div class="item-image line"></div>
+            <div class="item-5 item-image"></div>
+            <div class="item-1 item-image"></div>
+            <div class="item-2 item-image animated" data-ani-name="bounceIn"></div>
+            <div class="item-3 item-image animated" data-ani-name="slideInLeft" data-ani-delay="0.5s" ></div>
+            <div class="item-4 item-image animated" data-ani-name="slideInRight" data-ani-delay="1.0s" ></div>
         </div>
         <div class="swiper-slide slide-11">
             <div class="item-1 item-image animated" data-ani-name="zoomIn"></div>
@@ -123,7 +133,15 @@
 </audio>
 
 <script src="javascripts/bundle.js"></script>
-
+<script type="text/javascript">
+    // $(function(){
+    //     var s="";
+    // s+=document.body.offsetWidth+"//";
+    // s+=document.body.offsetHeight;
+    // $("#1111") .html(s);
+    // })
+    
+</script>
 </body>
 
 </html>

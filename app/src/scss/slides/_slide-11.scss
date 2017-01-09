@@ -1,17 +1,22 @@
 .slide-11 {
 
- 	.item-1{		
+ 	.item-1{		bottom:1.1%;	
+	
 		background-image: url('../images/11/1.png');
 	}
-	.item-2-1{
+	.item-2-1{	bottom:1.1%;	
+
 		display: none;
 		background-image: url('../images/11/2-1.png');
 	}
-	.item-2-2{
+	.item-2-2{	bottom:1.1%;	
+
 		display: none;
 		background-image: url('../images/11/2-2.png');
 	}
-	.item-3{		
+	.item-3{	
+		top:35%;
+		background-size:contain;	
 		background-image: url('../images/11/3.png');
 	}
 }

@@ -2,11 +2,23 @@
     'use strict';
 
     $(function(){
+        //虚拟按键
+        var s=document.body.offsetHeight/document.body.offsetWidth;
+        if(s<1.5){
+            $(".slide-2").children("div.item-1").css("top","2%");
+            $(".slide-4").children("div.item-1").css("top","2%");
+            $(".slide-4").children("div.item-1-5").css("top","2%");
+            $(".slide-4").children("span.item-text-beat").css("top","66.9%");
+            $(".slide-5").children("div.item-2").css("top","2%");
+            $(".slide-6").children("span.item-2").css("top","36%");
+            $(".slide-6").children("span.item-3").css("top","66%");
+            $(".slide-7").children("span.item-2").css("top","32.7%");
+            $(".slide-7").children("span.item-3").css("top","76.4%");
+        }
 
-    var name = decodeURIComponent(getParams("u"));
-    if(name != "null"){
-
-        $.get("http://localhost:8888/party/life/employee/"+name).then(function(response) {
+        var name = decodeURIComponent(getParams("u"));
+        if(name != "null"){
+            $.get("http://localhost:9900/party/life/employee/"+name).then(function(response) {
             var sex=response.sex;
             var userId=response.userId;
             var startDate=response.startDate;
@@ -59,13 +71,15 @@
             }
 
             if(workdays.length <= 4){  
-                $("#number-four").css("display","block");      
+                $("#number-four").css("display","block");  
+                $(".slide-4").children("div.item-1").css("display","block");    
             for (var i = 1; i <= 4 ; i++) {
                     $(".item-text-howlong-"+i).html(workdays[i-1]);
                 }
             }
             else{                
                 $("#number-five").css("display","block");
+                $(".slide-4").children("div.item-1-5").css("display","block");  
                 for (var i = 1; i <= 5 ; i++) {
                     $(".item-text-howlong-5-"+i).html(workdays[i-1]);
                 }
@@ -77,20 +91,26 @@
             $(".slide-7").children("span.item-2").html(hours);
             $(".slide-7").children("span.item-3").html(credit); 
 
-            if(hours<=180&&hours>144){
+            if(hours<=180&&hours>65){
                 $(".slide-7").children("div.item-2-5").css("display","block");
             }
-            else if(hours<=144&&hours>108){
+            else if(hours<=65&&hours>17){
                 $(".slide-7").children("div.item-2-4").css("display","block");
             }
-            else if(hours<=108&&hours>72){
+            else if(hours<=17&&hours>9){
                 $(".slide-7").children("div.item-2-3").css("display","block");
             }
-            else if(hours<=72&&hours>36){
+            else if(hours<=9&&hours>0){
                 $(".slide-7").children("div.item-2-2").css("display","block");
             }
-            else if(hours<=36&&hours>=0){
+            else if(hours<=0){
                 $(".slide-7").children("div.item-2-1").css("display","block");
+            }
+
+            if(credit==0){
+                $(".slide-7").children("div.item-4").css("display","none");
+                $(".slide-7").children("span.item-3").css("display","none");
+                $(".slide-7").children("div.item-5").css("top","5%");
             }
          },function(response){
             console.log(response);
